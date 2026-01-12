@@ -33,6 +33,15 @@ const channels = [
     description :'TyC Sports es un canal de televisión por suscripción argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.',
     // URL M3U8 de prueba que FUNCIONA
     streamUrl: 'https://a2vlca.fubohd.com/tycsports/mono.m3u8?token=276d57d463590fc5fb1f82cdfbbf489dcbfc5c15-1e-1768190012-1768172012'
+  },
+  {
+    id:'live_canal4',
+    name:'River plate vs Millonarios',
+    type:'tv',
+    poster:'https://www.ole.com.ar/2026/01/10/s6ljq-P5-_1200x630__1.jpg',
+    posterShape:'landscape',
+    description :'Partido de futbol entre River plate y Millonarios',
+    streamUrl: 'https://24a1.crackstreamslivehd.com/disney1/tracks-v1a1/mono.m3u8?ip=190.182.188.246&token=8ddb4c96a24851cbc15def8221a482025adc7549-f4-1768224007-1768170007'
   }
   
   // ═══════════════════════════════════════════════════════════════
