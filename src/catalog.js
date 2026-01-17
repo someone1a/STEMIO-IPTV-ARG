@@ -5,14 +5,26 @@ const { description } = require("./manifest");
 
 const channels = [
   {
+    id:'live_phenarol_river',
+    name: 'Peñarol River Plate',
+    type: 'tv',
+    poster: 'https://imgmedia.larepublica.pe/1000x590/larepublica/original/2026/01/16/696a90b8f860e6cc37010b81.webp',
+    posterShape: 'landscape',
+    description: 'Partido amistoso internacional de fútbol entre los equipos Peñarol de Uruguay y River Plate de Argentina.',
+    genres: ['Sports'],
+    // URL M3U8 de prueba que FUNCIONA
+    streamUrl: 'https://florcd1.crackstreamslivehd.com/global/disney4/index.m3u8?token=2717160e6134f44840a0d83e1bde0912959b5c19-83-1768726533-1768672533&ip=190.182.188.246'
+  },
+  {
     id: 'live_canal1',
     name: 'ESPN PREMIUM ARG',
     type: 'tv',
     poster: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/250px-ESPN_Premium_logo.svg.png',
     posterShape: 'landscape',
     description: 'canal de televisión por suscripción premium argentino dedicado a la transmisión específicamente del fútbol de ese país',
+    genres: ['Sports'],
     // URL M3U8 de prueba que FUNCIONA
-    streamUrl: 'https://anvtcax.fubohd.com/espnpremium/mono.m3u8?token=b18d1c3fd6fb1e7637090e0e1428500f626c11a8-d6-1768185307-1768167307'
+    streamUrl: 'https://deportes.ksdjugfsddeports.com:9092/MTkwLjE4Mi4xODguMjQ2/5_.m3u8?token=fPl7f2clHWJl52y0BuDeww&expires=1768702228'
   },
   {
     id: 'live_canal2',
@@ -21,8 +33,9 @@ const channels = [
     poster: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/TNT_Sports_%282023%29.svg/960px-TNT_Sports_%282023%29.svg.png',
     posterShape: 'landscape',
     description: 'TNT Sports es un canal de televisión por suscripción Argentin de deportes',
+    genres: ['Deportes'],
     // URL M3U8 de prueba que FUNCIONA
-    streamUrl: 'https://anvtcax.fubohd.com/tntsports/mono.m3u8?token=9284802d1505ecf743d20e8df6999ea00dba9cee-86-1768186619-1768168619'
+    streamUrl: 'https://deportes.ksdjugfsddeports.com:9092/MTkwLjE4Mi4xODguMjQ2/4_.m3u8?token=Wv3dpPQwszZVed0eAO2SsQ&expires=1768702159'
   },
   {
     id: 'live_canal3',
@@ -31,17 +44,20 @@ const channels = [
     poster:'https://cdn.eldestapeweb.com/eldestape/102023/1697634872025/tyc-sports-papelon-en-vivo-tv-furia-hinchas-seleccion-argentina-jpg..webp?cw=720&ch=540&extw=jpg',
     posterShape:'landscape',
     description :'TyC Sports es un canal de televisión por suscripción argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.',
+    genres: ['Deportes'],
     // URL M3U8 de prueba que FUNCIONA
-    streamUrl: 'https://a2vlca.fubohd.com/tycsports/mono.m3u8?token=276d57d463590fc5fb1f82cdfbbf489dcbfc5c15-1e-1768190012-1768172012'
+    streamUrl: 'https://dwqejs.6522236688.shop:8443/hls/neo2gy.m3u8?s=1MXzk_lH3Ssg73Urb3hEZg&e=1768270709'
   },
   {
     id:'live_canal4',
-    name:'River plate vs Millonarios',
+    name:'Canal 4 Esquel',
     type:'tv',
-    poster:'https://www.ole.com.ar/2026/01/10/s6ljq-P5-_1200x630__1.jpg',
+    poster:'https://upload.wikimedia.org/wikipedia/commons/3/3a/Canal_4_Esquel_logo.png',
     posterShape:'landscape',
-    description :'Partido de futbol entre River plate y Millonarios',
-    streamUrl: 'https://24a1.crackstreamslivehd.com/disney1/tracks-v1a1/mono.m3u8?ip=190.182.188.246&token=8ddb4c96a24851cbc15def8221a482025adc7549-f4-1768224007-1768170007'
+    description:'Canal 4 Esquel es un canal de televisión local de la ciudad de Esquel, en la provincia del Chubut, Argentina. Ofrece programación variada que incluye noticias locales, programas culturales, entretenimiento y eventos comunitarios.',
+    genres:['Local','Variedades'],
+    // URL M3U8 de prueba que FUNCIONA
+    streamUrl:'https://stream.arcast.com.ar/canal4esquel/canal4esquel/playlist.m3u8'
   }
   
   // ═══════════════════════════════════════════════════════════════
@@ -69,6 +85,7 @@ const channels = [
   //   poster: 'https://url-del-poster.jpg',
   //   posterShape: 'landscape',
   //   description: 'Descripción de mi canal',
+  //   genres: ['Sports'],
   //   streamUrl: 'https://anvtcax.fubohd.com/canal-ejemplo/mono.m3u8?token=TOKEN_VALIDO'
   // }
   //
@@ -113,7 +130,8 @@ function getCatalog(type, id, extra) {
     type: 'tv',
     poster: ch.poster,
     posterShape: ch.posterShape || 'landscape',
-    description: ch.description
+    description: ch.description,
+    genres: ch.genres || []
   }));
 
   console.log(`   ✅ Retornando ${metas.length} canal(es)`);
@@ -146,6 +164,7 @@ function getChannelById(id) {
     poster: ch.poster,
     posterShape: ch.posterShape,
     description: ch.description,
+    genres: ch.genres || [],
     // Agregado para mejor compatibilidad
     background: ch.poster,
     logo: ch.poster
