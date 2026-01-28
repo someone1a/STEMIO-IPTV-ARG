@@ -13,8 +13,7 @@ const channels = [
     description: 'Partido amistoso internacional de fútbol entre los equipos Peñarol de Uruguay y River Plate de Argentina.',
     genres: ['Sports'],
     // URL M3U8 de prueba que FUNCIONA
-    streamUrl: ['https://99a1.crackstreamslivehd.com/tntsports/tracks-v1a1/mono.m3u8?ip=190.182.188.246&token=32028cd1603416d30c03a8e7fef1dff7510111d5-fd-1769659204-1769605204', 
-      'https://24a1.crackstreamslivehd.com/disney1/tracks-v1a1/mono.m3u8?ip=190.182.188.246&token=237f41d7e7b869b4d6e6ee41a401b98de25c2dfd-5f-1769659307-1769605307']
+    streamUrl:'https://99a1.crackstreamslivehd.com/tntsports/tracks-v1a1/mono.m3u8?ip=190.182.188.246&token=32028cd1603416d30c03a8e7fef1dff7510111d5-fd-1769659204-1769605204'
   },
   {
     id: 'live_canal1',
