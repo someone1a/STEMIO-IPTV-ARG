@@ -8,12 +8,13 @@ const channels = [
     id:'live_phenarol_river',
     name: 'Peñarol River Plate',
     type: 'tv',
-    poster: 'https://imgmedia.larepublica.pe/1000x590/larepublica/original/2026/01/16/696a90b8f860e6cc37010b81.webp',
+    poster: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa-Phle5ACxwB6Wcf9LoJxHTys6Mdw_z62bg&s',
     posterShape: 'landscape',
     description: 'Partido amistoso internacional de fútbol entre los equipos Peñarol de Uruguay y River Plate de Argentina.',
     genres: ['Sports'],
     // URL M3U8 de prueba que FUNCIONA
-    streamUrl: 'https://florcd1.crackstreamslivehd.com/global/disney4/index.m3u8?token=2717160e6134f44840a0d83e1bde0912959b5c19-83-1768726533-1768672533&ip=190.182.188.246'
+    streamUrl: ['https://99a1.crackstreamslivehd.com/tntsports/tracks-v1a1/mono.m3u8?ip=190.182.188.246&token=32028cd1603416d30c03a8e7fef1dff7510111d5-fd-1769659204-1769605204', 
+      'https://24a1.crackstreamslivehd.com/disney1/tracks-v1a1/mono.m3u8?ip=190.182.188.246&token=237f41d7e7b869b4d6e6ee41a401b98de25c2dfd-5f-1769659307-1769605307']
   },
   {
     id: 'live_canal1',
