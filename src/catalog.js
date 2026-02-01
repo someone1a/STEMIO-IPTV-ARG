@@ -5,15 +5,15 @@ const { description } = require("./manifest");
 
 const channels = [
   {
-    id:'live_phenarol_river',
-    name: 'Peñarol River Plate',
+    id:'live_rosario_river',
+    name: 'Rosario - River EN VIVO',
     type: 'tv',
-    poster: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa-Phle5ACxwB6Wcf9LoJxHTys6Mdw_z62bg&s',
+    poster: 'https://cdn-img.zerozero.pt/img/noticias/020/imgS300I1041020T20260131003015.jpg',
     posterShape: 'landscape',
     description: 'Partido amistoso internacional de fútbol entre los equipos Peñarol de Uruguay y River Plate de Argentina.',
     genres: ['Sports'],
     // URL M3U8 de prueba que FUNCIONA
-    streamUrl:'https://99a1.crackstreamslivehd.com/tntsports/tracks-v1a1/mono.m3u8?ip=190.182.188.246&token=32028cd1603416d30c03a8e7fef1dff7510111d5-fd-1769659204-1769605204'
+    streamUrl:'https://8c51.crackstreamslivehd.com/global/tntsports/index.m3u8?token=e95a4e33422d76a396778d78794699a874e8829e-cb-1770022133-1769968133&ip=190.182.188.246'
   },
   {
     id: 'live_canal1',
@@ -24,7 +24,7 @@ const channels = [
     description: 'canal de televisión por suscripción premium argentino dedicado a la transmisión específicamente del fútbol de ese país',
     genres: ['Sports'],
     // URL M3U8 de prueba que FUNCIONA
-    streamUrl: 'https://deportes.ksdjugfsddeports.com:9092/MTkwLjE4Mi4xODguMjQ2/5_.m3u8?token=fPl7f2clHWJl52y0BuDeww&expires=1768702228'
+    streamUrl: 'https://14c51.crackstreamslivehd.com/global/espnpremium/index.m3u8?token=a6485e2dcfb29040c73be63d0e514a75f5e30f97-b9-1770022201-1769968201&ip=190.182.188.246'
   },
   {
     id: 'live_canal2',
@@ -35,7 +35,7 @@ const channels = [
     description: 'TNT Sports es un canal de televisión por suscripción Argentin de deportes',
     genres: ['Deportes'],
     // URL M3U8 de prueba que FUNCIONA
-    streamUrl: 'https://deportes.ksdjugfsddeports.com:9092/MTkwLjE4Mi4xODguMjQ2/4_.m3u8?token=Wv3dpPQwszZVed0eAO2SsQ&expires=1768702159'
+    streamUrl: 'https://8c51.crackstreamslivehd.com/global/tntsports/index.m3u8?token=e95a4e33422d76a396778d78794699a874e8829e-cb-1770022133-1769968133&ip=190.182.188.246'
   },
   {
     id: 'live_canal3',
@@ -46,7 +46,7 @@ const channels = [
     description :'TyC Sports es un canal de televisión por suscripción argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.',
     genres: ['Deportes'],
     // URL M3U8 de prueba que FUNCIONA
-    streamUrl: 'https://dwqejs.6522236688.shop:8443/hls/neo2gy.m3u8?s=1MXzk_lH3Ssg73Urb3hEZg&e=1768270709'
+    streamUrl: 'https://pecdl1.crackstreamslivehd.com/global/tycsports/index.m3u8?token=b4cdbb88d1c5ffc3a8472edf5c69adb03181bf6e-da-1770022203-1769968203&ip=190.182.188.246'
   },
   {
     id:'live_canal4',
@@ -58,6 +58,17 @@ const channels = [
     genres:['Local','Variedades'],
     // URL M3U8 de prueba que FUNCIONA
     streamUrl:'https://stream.arcast.com.ar/canal4esquel/canal4esquel/playlist.m3u8'
+  },
+  {
+    id: 'live_fox_sports_arg',
+    name: 'Fox Sports Argentina',
+    type: 'tv',
+    poster: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Fox_Sports_Argentina_Logo.svg/1200px-Fox_Sports_Argentina_Logo.svg.png', 
+    posterShape: 'landscape',
+    description: 'Fox Sports Argentina es un canal de televisión por suscripción argentino dedicado a la transmisión de eventos deportivos nacionales e internacionales.',
+    genres: ['Sports'],
+    // URL M3U8 de prueba que FUNCIONA
+    streamUrl: 'https://doc1.crackstreamslivehd.com/global/fox1ar/index.m3u8?token=adb5e4c109e2c7b0a516cd3d69927ee945b0de8e-fc-1770022196-1769968196&ip=190.182.188.246'
   }
   
   // ═══════════════════════════════════════════════════════════════
