@@ -1,7 +1,7 @@
 {
-  "name": "stremio-addon-tv",
-  "version": "1.0.0",
-  "description": "Stremio addon for live TV",
+  "name": "stremio-addon-tv-auto-ip",
+  "version": "2.0.0",
+  "description": "Stremio addon for live TV with automatic IP detection",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
@@ -12,7 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/someone1a/STEMIO-IPTV-ARG.git"
   },
-  "keywords": [],
+  "keywords": [
+    "stremio",
+    "addon",
+    "iptv",
+    "m3u8",
+    "live-tv",
+    "auto-ip"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -21,6 +28,7 @@
   "homepage": "https://github.com/someone1a/STEMIO-IPTV-ARG#readme",
   "dependencies": {
     "dotenv": "^17.2.3",
+    "express": "^4.18.2",
     "stremio-addon-sdk": "^1.6.10"
   },
   "devDependencies": {
