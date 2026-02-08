@@ -100,15 +100,27 @@ function fetchPublicIP() {
  */
 const channelTemplates = [
   {
-    id: 'live_rosario_river',
-    name: 'Rosario - River EN VIVO',
+    id: 'live_superbowl_LX',
+    name: 'Super Bowl LX: New England Patriots vs Seattle Seahawks',
     type: 'tv',
-    poster: 'https://cdn-img.zerozero.pt/img/noticias/020/imgS300I1041020T20260131003015.jpg',
+    poster: 'https://espnpressroom.com/latinamerica/files/2026/02/ESPN_D_NFL_SuperBowl_LX_Jugadores_PR2026-1024x576.jpg',
     posterShape: 'landscape',
-    description: 'Partido amistoso internacional de fútbol entre los equipos Peñarol de Uruguay y River Plate de Argentina.',
-    genres: ['Sports'],
-    streamUrlTemplate: 'https://8c51.crackstreamslivehd.com/global/tntsports/index.m3u8?token=e95a4e33422d76a396778d78794699a874e8829e-cb-1770022133-1769968133&ip={IP}'
+    description: 'Transmisión en vivo del Super Bowl LX entre New England Patriots y Seattle Seahawks.',
+    genres: ['Sports', 'Football'],
+    streamUrl: 'https://98ca2.crackstreamslivehd.com/global/disney4/index.m3u8?token=7cea4faee45bf218877c95f33f4defc8d93b8a3d-49-1770630554-1770576554&ip=190.182.188.246'
+
   },
+  {
+    id: 'live_boca_velez',
+    name: 'Boca Juniors vs Vélez Sarsfield',
+    type: 'tv',
+    poster: 'https://www.365scores.com/es/news/wp-content/uploads/2026/02/Velez-vs-Boca-previa.jpg',
+    posterShape: 'landscape',
+    description: 'Partido en vivo entre Boca Juniors y Vélez Sarsfield por la Liga Profesional de Fútbol Argentina.',
+    genres: ['Sports', 'Football'],
+    streamUrl: 'https://99a1.crackstreamslivehd.com/global/tntsports/index.m3u8?token=f29b53949b716e3467893c0e4948bbeaa87fe0ce-41-1770630585-1770576585&ip=190.182.188.246'
+  },
+
   {
     id: 'live_canal1',
     name: 'ESPN PREMIUM ARG',
@@ -127,7 +139,7 @@ const channelTemplates = [
     posterShape: 'landscape',
     description: 'TNT Sports es un canal de televisión por suscripción argentino de deportes',
     genres: ['Deportes'],
-    streamUrlTemplate: 'https://8c51.crackstreamslivehd.com/global/tntsports/index.m3u8?token=e95a4e33422d76a396778d78794699a874e8829e-cb-1770022133-1769968133&ip={IP}'
+    streamUrlTemplate: 'https://99a1.crackstreamslivehd.com/global/tntsports/index.m3u8?token=f29b53949b716e3467893c0e4948bbeaa87fe0ce-41-1770630585-1770576585&ip=190.182.188.246'
   },
   {
     id: 'live_canal3',
