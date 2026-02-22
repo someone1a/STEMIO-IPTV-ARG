@@ -100,25 +100,14 @@ function fetchPublicIP() {
  */
 const channelTemplates = [
   {
-    id: 'live_superbowl_LX',
-    name: 'Super Bowl LX: New England Patriots vs Seattle Seahawks',
+    id: 'live_river',
+    name: 'Velez vs River Plate',
     type: 'tv',
-    poster: 'https://espnpressroom.com/latinamerica/files/2026/02/ESPN_D_NFL_SuperBowl_LX_Jugadores_PR2026-1024x576.jpg',
+    poster: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/River_Plate_logo.svg/1200px-River_Plate_logo.svg.png',
     posterShape: 'landscape',
-    description: 'Transmisión en vivo del Super Bowl LX entre New England Patriots y Seattle Seahawks.',
+    description: 'Partido de fútbol entre Velez Sarsfield y River Plate en vivo',
     genres: ['Sports', 'Football'],
-    streamUrl: 'https://98ca2.crackstreamslivehd.com/global/disney4/index.m3u8?token=7cea4faee45bf218877c95f33f4defc8d93b8a3d-49-1770630554-1770576554&ip=190.182.188.246'
-
-  },
-  {
-    id: 'live_boca_velez',
-    name: 'Boca Juniors vs Vélez Sarsfield',
-    type: 'tv',
-    poster: 'https://www.365scores.com/es/news/wp-content/uploads/2026/02/Velez-vs-Boca-previa.jpg',
-    posterShape: 'landscape',
-    description: 'Partido en vivo entre Boca Juniors y Vélez Sarsfield por la Liga Profesional de Fútbol Argentina.',
-    genres: ['Sports', 'Football'],
-    streamUrl: 'https://99a1.crackstreamslivehd.com/global/tntsports/index.m3u8?token=f29b53949b716e3467893c0e4948bbeaa87fe0ce-41-1770630585-1770576585&ip=190.182.188.246'
+    streamUrlTemplate: 'https://j8nte.envivoslatam.org/hotflix/espnpremium/index.m3u8?token=f49b4c600df462156cb6f1295fd2c00c2c476398-5f-1771842319-1771788319&ip=190.182.188.246'
   },
 
   {
