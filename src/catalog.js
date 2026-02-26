@@ -107,14 +107,14 @@ const channelTemplates = [
     posterShape: 'landscape',
     description: 'Partido de fútbol entre Velez Sarsfield y River Plate en vivo',
     genres: ['Sports', 'Football'],
-    streamUrlTemplate: 'https://j8nte.envivoslatam.org/hotflix/espnpremium/index.m3u8?token=f49b4c600df462156cb6f1295fd2c00c2c476398-5f-1771842319-1771788319&ip=190.182.188.246'
+    streamUrlTemplate: 'https://smjt9q.envivoslatam.org/hotflix/tntsports/index.m3u8?token=e12256ceafecce2099024006a67c0b6fda543bf4-5f-1772181729-1772127729&ip=190.182.188.246'
   },
 
   {
     id: 'live_canal1',
     name: 'ESPN PREMIUM ARG',
     type: 'tv',
-    poster: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/250px-ESPN_Premium_logo.svg.png',
+    poster: 'https://www.ole.com.ar/2026/02/25/vDdWqZovU_1290x760__1.jpg',
     posterShape: 'landscape',
     description: 'Canal de televisión por suscripción premium argentino dedicado a la transmisión específicamente del fútbol de ese país',
     genres: ['Sports'],
