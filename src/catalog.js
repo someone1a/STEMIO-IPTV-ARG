@@ -118,7 +118,7 @@ const channelTemplates = [
     posterShape: 'landscape',
     description: 'Canal de televisión por suscripción premium argentino dedicado a la transmisión específicamente del fútbol de ese país',
     genres: ['Sports'],
-    streamUrlTemplate: 'https://lcrj3.envivoslatam.org/hotflix/espn2/index.m3u8?token=fcef5bc68446cc047aa3f4f3ff0f85726c0ca49c-a5-1772544444-1772490444&ip=190.182.188.246'
+    streamUrlTemplate: 'https://ssout.marsrivagg.click/espnpremium/index.m3u8?token=e855ab2445255b5a12ca732893fb7d708346f3bc-5a-1772544855-1772490855&ip=190.182.188.246'
   },
   {
     id: 'live_canal2',
