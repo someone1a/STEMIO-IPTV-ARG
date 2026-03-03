@@ -118,7 +118,7 @@ const channelTemplates = [
     posterShape: 'landscape',
     description: 'Canal de televisión por suscripción premium argentino dedicado a la transmisión específicamente del fútbol de ese país',
     genres: ['Sports'],
-    streamUrlTemplate: 'https://prod-fastly-sa-east-1.video.pscp.tv/Transcoding/v1/hls/YF9eko9rjB9_9eSBNOOe5kGEH3PmkKrW-Orxo52MHXYikKaLgAdqChmWjBw5ksvoPtNy3DonQLAc4UnVd2Gm2Q/transcode/sa-east-1/periscope-replay-direct-prod-sa-east-1-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJFbmNvZGVyU2V0dGluZyI6ImVuY29kZXJfc2V0dGluZ183MjBwMzBfMTAiLCJIZWlnaHQiOjcyMCwiS2JwcyI6Mjc1MCwiV2lkdGgiOjEyODB9.ldktM4fCFRfkP4ZEBfZPKtlAUNAcTPkoz994YJAzWpE/dynamic_highlatency.m3u8?type=live'
+    streamUrlTemplate: 'https://prod-fastly-sa-east-1.video.pscp.tv/Transcoding/v1/hls/YF9eko9rjB9_9eSBNOOe5kGEH3PmkKrW-Orxo52MHXYikKaLgAdqChmWjBw5ksvoPtNy3DonQLAc4UnVd2Gm2Q/transcode/sa-east-1/periscope-replay-direct-prod-sa-east-1-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJFbmNvZGVyU2V0dGluZyI6ImVuY29kZXJfc2V0dGluZ183MjBwMzBfMTAiLCJIZWlnaHQiOjcyMCwiS2JwcyI6Mjc1MCwiV2lkdGgiOjEyODB9.ldktM4fCFRfkP4ZEBfZPKtlAUNAcTPkoz994YJAzWpE/dynamic_highlatency.m3u8'
   },
   {
     id: 'live_canal2',
