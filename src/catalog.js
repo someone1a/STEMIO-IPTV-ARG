@@ -114,7 +114,7 @@ const channelTemplates = [
     id: 'live_canal1',
     name: 'ESPN PREMIUM ARG',
     type: 'tv',
-    poster: 'https://www.ole.com.ar/2026/02/25/vDdWqZovU_1290x760__1.jpg',
+    poster: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReVbLYLo_u8qBUFkkSihG7p4aklNqct3Gx4g&s',
     posterShape: 'landscape',
     description: 'Canal de televisión por suscripción premium argentino dedicado a la transmisión específicamente del fútbol de ese país',
     genres: ['Sports'],
