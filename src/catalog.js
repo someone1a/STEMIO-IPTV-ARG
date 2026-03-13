@@ -99,17 +99,7 @@ function fetchPublicIP() {
  * La IP se reemplazará dinámicamente
  */
 const channelTemplates = [
-  {
-    id: 'live_river',
-    name: 'Velez vs River Plate',
-    type: 'tv',
-    poster: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/River_Plate_logo.svg/1200px-River_Plate_logo.svg.png',
-    posterShape: 'landscape',
-    description: 'Partido de fútbol entre Velez Sarsfield y River Plate en vivo',
-    genres: ['Sports', 'Football'],
-    streamUrlTemplate: 'https://smjt9q.envivoslatam.org/hotflix/tntsports/index.m3u8?token=e12256ceafecce2099024006a67c0b6fda543bf4-5f-1772181729-1772127729&ip=190.182.188.246'
-  },
-
+  
   {
     id: 'live_canal1',
     name: 'ESPN PREMIUM ARG',
@@ -128,7 +118,7 @@ const channelTemplates = [
     posterShape: 'landscape',
     description: 'TNT Sports es un canal de televisión por suscripción argentino de deportes',
     genres: ['Deportes'],
-    streamUrlTemplate: 'https://99a1.crackstreamslivehd.com/global/tntsports/index.m3u8?token=f29b53949b716e3467893c0e4948bbeaa87fe0ce-41-1770630585-1770576585&ip=190.182.188.246'
+    streamUrlTemplate: 'https://aw1wcm92zq.fubohd.com/tntsports/mono.m3u8?token=e5ba09507cb0187b66e9b2a2365914b33e916a9d-69-1773379226-1773361226'
   },
   {
     id: 'live_canal3',
