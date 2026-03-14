@@ -99,7 +99,16 @@ function fetchPublicIP() {
  * La IP se reemplazará dinámicamente
  */
 const channelTemplates = [
-  
+  {
+    id:'live_arrieros',
+    name:'Arrieros',
+    type:'tv',
+    poster: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk7EyYPdU7wmgA7MXwIKvKm_WIRvxQsRDVhA&s',
+    posterShape: 'Landscape',
+    description: 'DOcumental',
+    genres:['documental],
+    streamUrlTemplate:'https://vod-adaptive-ak.vimeocdn.com/exp=1773470616~acl=%2Fd8a3921d-2149-412d-8b65-f28418271715%2Fpsid%3D17b775d337c94d71815483977b67ba95fb6dd2e5a2bae6abe23082a16eb071c3%2F%2A~hmac=0ed38775901c818895fdf7091186959d027a24283df964065ef0d8ad269d769c/d8a3921d-2149-412d-8b65-f28418271715/psid=17b775d337c94d71815483977b67ba95fb6dd2e5a2bae6abe23082a16eb071c3/v2/playlist/av/primary/playlist.m3u8?omit=opus&pathsig=8c953e4f~hGb63oaKiHrSm597wm5IE37bhGHyPW5ddxptP9imfXE&r=dXM%3D&rh=1S0Ywr&sf=fmp4',
+  }.
   {
     id: 'live_canal1',
     name: 'ESPN PREMIUM ARG',
