@@ -66,18 +66,24 @@ app.get('/stream/:type/:id.json', async (req, res) => {
   console.log(`Stream request from ${req.ip} for ${type}/${id}`);
 
   try {
-    const streamUrl = await catalogModule.getStreamUrl(args.id, args.req);
-    const result = streamUrl ? {
+    const streamData = await catalogModule.getStreamUrl(args.id, args.req);
+    const normalized = typeof streamData === 'string'
+      ? { url: streamData }
+      : streamData || {};
+
+    const result = normalized.url ? {
       streams: [{
-        url: streamUrl,
+        url: normalized.url,
         title: '🔴 En Vivo',
         name: 'Canal en vivo',
+        ...(normalized.httpHeaders ? { httpHeaders: normalized.httpHeaders } : {}),
         behaviorHints: {
           notWebReady: false,
           countryWhitelist: [],
         },
       }],
     } : { streams: [] };
+
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.json(result);
   } catch (err) {

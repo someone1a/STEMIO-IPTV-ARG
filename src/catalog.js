@@ -126,7 +126,18 @@ async function getStreamUrl(id, req) {
   try {
     const url = await getM3U8WithClientIP(id, clientIP);
     console.log(`   ✅ Stream final inyectado: ${url}`);
-    return url;
+
+    const referer = `https://streamtp-abc.net/global1.php?stream=${streamName}`;
+    return {
+      url,
+      httpHeaders: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Referer': referer,
+        'Origin': 'https://streamtp-abc.net',
+        'Accept': '*/*',
+        'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
+      },
+    };
   } catch (err) {
     console.error(`   ⚠️  Scraping falló para ${id}:`, err.message);
     return null;
