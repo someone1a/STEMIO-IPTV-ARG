@@ -5,14 +5,17 @@ const { getM3U8WithClientIP, STREAM_MAP } = require('./scraper');
 // Función auxiliar para obtener la IP del cliente
 async function getClientIP(req) {
   const headers = req?.headers || {};
-  const ip = headers['x-forwarded-for']?.split(',')[0]?.trim() ||
+  const xff = headers['x-forwarded-for'];
+  const ip = xff?.split(',')[0]?.trim() ||
              headers['x-real-ip'] ||
+             req?.ip ||
              req?.connection?.remoteAddress ||
              req?.socket?.remoteAddress ||
-             req?.ip ||
              '127.0.0.1';
 
-  return ip.replace(/^::ffff:/, '');
+  const normalized = ip.replace(/^::ffff:/, '');
+  console.log(`getClientIP: x-forwarded-for=${xff} req.ip=${req?.ip} remote=${req?.connection?.remoteAddress} socket=${req?.socket?.remoteAddress} -> ${normalized}`);
+  return normalized;
 }
 
 const CHANNEL_METADATA = {
@@ -119,9 +122,10 @@ async function getStreamUrl(id, req) {
     return null;
   }
 
-  console.log(`   🤖 Obteniendo URL via scraping para: ${id}`);
+  console.log(`   🤖 Obteniendo URL via scraping para: ${id} usando ip=${clientIP}`);
   try {
     const url = await getM3U8WithClientIP(id, clientIP);
+    console.log(`   ✅ Stream final inyectado: ${url}`);
     return url;
   } catch (err) {
     console.error(`   ⚠️  Scraping falló para ${id}:`, err.message);

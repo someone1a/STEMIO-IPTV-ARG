@@ -6,9 +6,8 @@ const manifest = {
   id: 'org.stremio.m3u8live',
   
   // Versión del addon
-  version: '1.0.1000',
-  
-  // Nombre del addon que aparecerá en Stremio
+  version: '2.0.0',
+   // Nombre del addon que aparecerá en Stremio
   name: 'M3U8 Live Channels',
   
   // Descripción del addon

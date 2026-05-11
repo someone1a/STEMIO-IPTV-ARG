@@ -12,6 +12,7 @@ const PORT = process.env.PORT || 7000;
 const HOST = process.env.HOST || '0.0.0.0';
 
 const app = express();
+app.set('trust proxy', true);
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -61,6 +62,8 @@ app.get('/meta/:type/:id.json', async (req, res) => {
 app.get('/stream/:type/:id.json', async (req, res) => {
   const { type, id } = req.params;
   const args = { type, id, req };
+
+  console.log(`Stream request from ${req.ip} for ${type}/${id}`);
 
   try {
     const streamUrl = await catalogModule.getStreamUrl(args.id, args.req);
